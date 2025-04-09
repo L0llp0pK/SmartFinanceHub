@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Finance Hub</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Finance Hub</h1>
+    </header>
+
+    <div class="content" id="home">
+        <h2>Financial Categories</h2>
+        <div class="card" onclick="showArticle('budgeting')">Budgeting Tips</div>
+        <div class="card" onclick="showArticle('investing')">Investing Basics</div>
+        <div class="card" onclick="showArticle('saving')">Saving Strategies</div>
+        <div class="card" onclick="showArticle('creditscore')">Credit Score</div>
+        <div class="card" onclick="showArticle('debt')">Debt Management</div>
+        <div class="card" onclick="showArticle('retirement')">Retirement Planning</div>
+        <div class="card" onclick="showArticle('passiveincome')">Passive Income</div>
+        <div class="card" onclick="showArticle('mistakes')">Common Mistakes</div>
+    </div>
+
+    <div class="article hidden" id="budgeting">
+        <h2>Budgeting Tips</h2>
+        <article>
+            <h3>Track Everything</h3>
+            <p>Keeping a record of every expense helps you understand your spending habits. Use a notebook, spreadsheet, or app to track all purchases. Over time, you’ll spot areas where you can cut costs.</p>
+        </article>
+        <article>
+            <h3>Create Spending Categories</h3>
+            <p>Organize your income by categories like rent, food, and entertainment. Allocate a fixed percentage of your earnings to each. This method ensures balance and avoids overspending.</p>
+        </article>
+        <article>
+            <h3>Adjust Monthly</h3>
+            <p>Budgets aren’t one-time tools. Life changes, and your budget should too. Review it monthly and make tweaks based on your actual spending and financial goals.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="investing">
+        <h2>Investing Basics</h2>
+        <article>
+            <h3>Diversify Your Investments</h3>
+            <p>Don’t put all your money into one type of asset. Spread your investments across stocks, bonds, and funds. This reduces risk and increases your chances of steady returns.</p>
+        </article>
+        <article>
+            <h3>Invest Consistently</h3>
+            <p>Rather than timing the market, invest a set amount regularly. This strategy, known as dollar-cost averaging, helps manage risk and builds wealth gradually over time.</p>
+        </article>
+        <article>
+            <h3>Set Clear Goals</h3>
+            <p>Before you invest, define what you're working toward. Retirement, a house, or education can all be goals. Clear targets help shape the right investment strategy.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="saving">
+        <h2>Saving Strategies</h2>
+        <article>
+            <h3>Automate Savings</h3>
+            <p>Set up automatic transfers to move money into your savings each payday. This ensures saving becomes a habit and removes the temptation to spend first.</p>
+        </article>
+        <article>
+            <h3>Have an Emergency Fund</h3>
+            <p>Save at least 3 to 6 months’ worth of living expenses. This fund acts as a safety net for unexpected situations like job loss or medical emergencies.</p>
+        </article>
+        <article>
+            <h3>Set Short and Long-Term Goals</h3>
+            <p>Saving for a vacation is different than saving for a home. Define your goals clearly and prioritize them. This gives purpose to your savings and helps track progress.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="creditscore">
+        <h2>Credit Score</h2>
+        <article>
+        <h3>Pay Bills on Time</h3>
+            <p>Timely payments
+are the biggest factor in your credit score. Set reminders or automate payments to avoid missing due dates.</p>
+        </article>
+        <article>
+            <h3>Keep Balances Low</h3>
+            <p>Use less than 30% of your available credit. High utilization signals risk to lenders and can negatively affect your score.</p>
+        </article>
+        <article>
+            <h3>Review Your Credit Report</h3>
+            <p>Check your credit report annually for errors. Dispute inaccuracies quickly to protect your score and financial reputation.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="debt">
+        <h2>Debt Management</h2>
+        <article>
+            <h3>List and Prioritize Debts</h3>
+            <p>Make a list of all your debts, interest rates, and due dates. Focus on paying off high-interest debts first to save money long-term.</p>
+        </article>
+        <article>
+            <h3>Use the Snowball or Avalanche Method</h3>
+            <p>The snowball method pays off the smallest debt first for motivation. The avalanche method targets the highest interest. Choose the one that fits your personality.</p>
+        </article>
+        <article>
+            <h3>Negotiate with Creditors</h3>
+            <p>If you’re struggling, reach out to lenders. You may be able to get lower interest rates or set up new payment plans.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="retirement">
+        <h2>Retirement Planning</h2>
+        <article>
+            <h3>Start Early</h3>
+            <p>The earlier you begin saving, the more compound interest works in your favor. Even small contributions grow significantly over decades.</p>
+        </article>
+        <article>
+            <h3>Use Retirement Accounts</h3>
+            <p>Take advantage of accounts like 401(k)s and IRAs. These offer tax benefits that make saving for retirement more effective.</p>
+        </article>
+        <article>
+            <h3>Plan for Lifestyle and Healthcare</h3>
+            <p>Retirement planning isn't just saving money—it's about envisioning your lifestyle and estimating healthcare and living costs accordingly.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="passiveincome">
+        <h2>Passive Income</h2>
+        <article>
+            <h3>Invest in Dividend Stocks</h3>
+            <p>These stocks pay you a share of profits regularly. Reinvest or use them as a steady income stream over time.</p>
+        </article>
+        <article>
+            <h3>Rent Out Assets</h3>
+            <p>Properties, cars, or even tools can generate passive income. Platforms make it easy to list and manage rentals.</p>
+        </article>
+        <article>
+            <h3>Create Digital Products</h3>
+            <p>Write an eBook or build an online course. Once created, they can be sold repeatedly without ongoing effort.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+    </div>
+
+    <div class="article hidden" id="mistakes">
+        <h2>Common Financial Mistakes</h2>
+        <article>
+            <h3>Living Beyond Your Means</h3>
+            <p>Spending more than you earn leads to debt. Track spending, reduce luxuries, and live below your income level.</p>
+        </article>
+        <article>
+            <h3>Ignoring Emergency Savings</h3>
+            <p>Without a buffer, even small surprises can turn into financial crises. Build and maintain an emergency fund.</p>
+        </article>
+        <article>
+            <h3>Delaying Retirement Planning</h3>
+            <p>Waiting too long to start saving for retirement costs more in the long run. Start today, no matter how small the amount.</p>
+        </article>
+        <span class="back-btn" onclick="goBack()">← Back to Home</span>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Smart Finance Hu
+b. All rights reserved. | Powered by Amazon EC2 | MIT Licensed</p>
+    </footer>
+
+    <script>
+        function showArticle(id) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function goBack() {
+            document.querySelectorAll('.article').forEach(article => {
+                article.classList.add('hidden');
+            });
+            document.getElementById('home').style.display = 'block';
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        header, footer {
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .content, .article {
+            padding: 2em;
+        }
+        .card {
+            background: #fff;
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .card:hover {
+            background: #e9ecef;
+        }
+        .hidden {
+            display: none;
+        }
+        .back-btn {
+            color: #007bff;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 1em;
+        }
+        article {
+            background: #ffffff;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-left: 5px solid #007bff;
+        }
+    </style>s
